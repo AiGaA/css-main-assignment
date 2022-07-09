@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-LightItalic';
+    src: url(../fonts/Roboto-LightItalic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../fonts/Roboto-Bold.ttf) format('truetype');
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto-Regular', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    color: #F9FAF8;
+    margin: 0;
+    padding: 5px 0px;
+    font-family: 'Roboto-Bold', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a, p {
+    font-size: 18px;
+    color: #E5E7EB;
+    text-decoration: none;
+    margin: 0;
+}
+
+a:hover {
+    color: rgba(229, 231, 235, 0.8);
+}
+
+header, footer {
+    display: flex;
+    align-items: center;
+    background-color: #1F2937;
+}
+
+#header-id {
+    justify-content: space-between;
+}
+
+#footer-id {
+    justify-content: center;
+}
+
+#logo-text {
+    font-size: 24px;
+}
+
+#hero-title {
+    font-size: 48px;
+    font-family: 'Roboto-Bold', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}
+
+button {
+    color: #E5E7EB;
+    background-color: #3882F6;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 20px 0;
+}
+
+button:hover {
+    background-color: rgba(56, 130, 247, 0.7)
+}
+
+#secondary-text {
+    margin: 5px 0;
+}
+
+/* This will show the top part of the website. including the navigation */
+.container {
+    padding: 1em 15%;
+    background-color: #1F2937;
+}
+
+.flex-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.flex-nav li {
+    padding: 0 10px;
+    display: inline-block;
+}
+
+/* Hero container will show the header, text, button and an image*/
+.hero-container {
+    display: flex;
+    margin: 0;
+    padding: 2em 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-textbox {
+    flex: 1;
+    padding: 5px;
+}
+
+.hero-img {
+    flex: 1;
+    width: 22em;
+    height: 18em;
+    padding: 10px;
+}
+
+/* This part is body part with 4 images and some text under */
+.main-body {
+    padding: 3em 15%;
+    text-align: center;
+}
+
+#gallery-title {
+    color: #1F2937;
+    font-size: 36px;
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+
+.gallery-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.gallery-list li {
+    padding: 10px 10px;
+}
+
+.gallery-list p {
+    color: #1F2937;
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+#gallery-img {
+    width: 11em;
+    height: 11em;
+    border: 3px solid #3882F6;
+    border-radius: 6px;
+    margin: 0 10px;
+}
+
+/* Quote section */
+.quote-section {
+    padding: 50px 15%;
+    background-color: #E5E7EB;
+}
+
+.quote-section p {
+    color: #1F2937;
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Roboto-LightItalic', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+#quote-author {
+    text-align: right;
+    font-size: 18px;
+    font-family: 'Roboto-Bold', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.action-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882F6;
+    margin: 50px 15%;
+    padding: 2em 8em;
+    border-radius: 10px;
+}
+
+#box {
+    flex: 6;
+}
+
+.action-box button {
+    flex: 1;
+    border: 1px solid #E5E7EB;
+    width: 100px;
+}
+
+.action-box button:hover {
+    background-color: #7da9f0;
+}
+
+footer p {
+    padding: 2em 0;
+    font-size: 14px;
+
+}
+
+/* Some adjustments, on how website appears on smaller devices with width below 650px */
+@media all and (max-width:650px) {
+
+    header, footer {
+        flex: wrap;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .flex-nav li {
+        padding: 10px 5px;
+    }
+
+    .hero-container {
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .main-body {
+        text-align: center;
+    }
+
+    .gallery-list ul {
+        flex-wrap: wrap;
+    }
+
+    .gallery-list li {
+        flex: 1 1 50%;
+    }
+
+    .action-box {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+
+}
